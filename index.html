@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1 id="title">Survey Form</h1>
+    <p id="description">This is a sample form survey for a certification project</p>
+    
+
+    <form id="survey-form" action="#" method="post">
+
+      <fieldset>
+        <label id="name-label" for="name">Name:</label>
+        <input placeholder="John" type="text" id="name" name="name" required>
+
+        <label id="email-label" for="email">Email:</label>
+        <input placeholder="jhon@salmon.com" type="email" id="email" name="email" required>
+
+        <label id="number-label" for="email">Number:</label>
+        <input placeholder="28" type="number" id="number" name="number" min=15 max=120 required>
+      </fieldset>
+
+      <fieldset>
+
+        <select id="dropdown" name="select">
+          <option value="value1">🥸</option>
+          <option value="value2" selected>😎</option>
+          <option value="value3">🤯</option>
+        </select>
+
+      </fieldset>
+
+      <fieldset>
+      <input type="radio" id="good" name="opinion" value="good" checked />
+      <label for="good">Good</label>
+      <input type="radio" id="based" name="opinion" value="based" checked />
+      <label for="based">Good</label>
+      <input type="radio" id="true" name="opinion" value="true" checked />
+      <label for="true">Good</label>
+
+      </fieldset>
+
+
+      <fieldset>
+<input type="checkbox" id="checkbox1" value="peperoni" />
+<label for="checkbox1">Peperoni</label>
+<input type="checkbox" id="checkbox1" value="papaya" />
+<label for="checkbox1">Papaya</label>
+<input type="checkbox" id="checkbox1" value="parmesan" />
+<label for="checkbox1">Parmesan</label>
+<input type="checkbox" id="checkbox1" value="pera" />
+<label for="checkbox1">Pera</label>
+<input type="checkbox" id="checkbox1" value="pineapple" />
+<label for="checkbox1">Pineapple</label>
+
+      </fieldset>
+
+      <fieldset>
+        <label for="comments">Review of FCC?</label>
+
+        <textarea id="comments" name="comments" rows="10" cols="50">Write something here</textarea>
+
+      </fieldset>
+
+
+        <input id="submit" type="submit" value="Send">
+    </form>
+
+</body>
+</html>
